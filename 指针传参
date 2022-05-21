@@ -1,0 +1,20 @@
+my_strlen(char* str)
+{
+ char* start=str;
+ char* end =str;
+ while(*end!='\0')
+ {
+ 	end++;
+ }
+ return end-start;
+}
+int main()
+{
+	//strlen-求字符串长度
+	//递归   计数器    指针 
+	char arr[]="bit";
+	int len=my_strlen(arr);//返回的是首元素的地址 
+	printf("%d\n",len);
+	
+	return 0;
+ } 
